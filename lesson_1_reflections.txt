@@ -1,0 +1,72 @@
+Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+A: With the indications of the +++ for added code and --- for removed code.
+*******************************************************
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+A: It will aid in noticing your common mistakes as well as seeing how you have improved or see where you still need to.
+*******************************************************
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+A: You are able to break large coding pats into smaller manageable steps going back and forth to see where you made errors The pros are you get to make more logically and meaningful commits when you do it. the cons are you may forget to commit and it can get bad. 
+*******************************************************
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+A: This may be to show the close relation between the files as they are dependent on one another.
+*******************************************************
+Q:How can you use the commands git log and git diff to view the history of files?
+
+A: Using git log you are able to see the list of all commits within and only in a repository. git diff will allow you to note changes.. USING (git log --stat //Is a much faster way to view the number of deletions and insertions between two files) but Git diff is for specific as you will be able to know what exactly changed.
+*******************************************************
+Q: How might using version control make you more confident to make changes that could break something?
+
+A: It makes its far easier to change things without changing the main or original file, allowing me to see what different things would do and act when removed or added. More of a risk taker.. able to explore significant changes without fear of breaking the entire code base.. allowed to rethink the entire code base.
+*******************************************************
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+
+A: Compiling and working on the Sunshine android app.
+*******************************************************
+Side Note: 
+
+
+Useful options for git log --pretty=format Option 	Description of Output
+
+%H //Commit hash
+
+%h //Abbreviated commit hash
+
+%T //Tree hash
+
+%t //Abbreviated tree hash
+
+%P //Parent hashes
+
+%p //Abbreviated parent hashes
+
+%an //Author name
+
+%ae //Author email
+
+%ad //Author date (format respects the --date=option)
+
+%ar //Author date, relative
+
+%cn //Committer name
+
+%ce //Committer email
+
+%cd //Committer date
+
+%cr //Committer date, relative
+
+%s //Subject
+
+Example output ^__^:
+
+git log --pretty=format:"%h - %an, %ar : %s"
+
+ca82a6d - Scott Chacon, 6 years ago : changed the version number
+
+085bb3b - Scott Chacon, 6 years ago : removed unnecessary test
+
+a11bef0 - Scott Chacon, 6 years ago : first commit
